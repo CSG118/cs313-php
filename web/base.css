@@ -1,0 +1,184 @@
+/*
+Color choices
+Navy: #000080
+Step darker: #000066
+Two Steps Lighter: #0000b3
+Blue:#0000ff
+Gray-Black: #333
+Gray:  #a6a6a6
+Two Steps Above White: #d9d9d9
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #000066;
+}
+
+body {
+    background-color: #a6a6a6;
+}
+.header {
+    font-size: 24pt;
+    background-color: #000080;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  padding: 1px;
+  text-align: center;
+  color: white;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.side {
+    width: 25%;
+}
+
+.column.middle {
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+#contact{
+    display: block;
+}
+
+
+label{
+    font-size: 16pt;
+    text-align: center;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    font-size: 12pt;
+    padding: 12px; a
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 15px; 
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+    font-size: 12pt;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #a6a6a6;
+    padding: 10px;
+    }
+
+input[type=reset] {
+    font-size: 12pt;
+    background-color: #ff0000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input[type=reset]:hover {
+    background-color: #cc0000;
+}
+
+p {
+    font-size: 16pt;
+
+}
+
+table, th, td {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20pt;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+
+}
+output {
+    font-size: 25pt;
+    color: red;
+}
+
+button {
+    font-size: 12pt;
+    padding: 12px; a
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 15px;  
+}
+
+button:hover {
+    background-color: #000080;
+    color: white;
+}
+
+div:hover {
+    font-weight: bold;
+}
